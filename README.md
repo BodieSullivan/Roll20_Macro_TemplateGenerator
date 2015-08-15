@@ -1,0 +1,2 @@
+# Roll20_Macro_TemplateGenerator
+Generate Roll20 Macro Templates automatically
