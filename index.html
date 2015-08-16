@@ -70,12 +70,30 @@
                <div class="form-inline">
                  <input type="text" name="item" class="form-control col-sm-3" placeholder="Text" ng-model="item.text">
                  <input type="text" name="item" class="form-control col-sm-3" placeholder="Value" ng-model="item.value">
-                 <button type="button" name="button" class="btn btn-success" ng-click="templateInput.addCustomItem()">+</button>
+                 <button type="button" name="button" class="btn btn-success" ng-if="$last" ng-click="templateInput.addCustomItem()">+</button>
              </div>
              </div>
            </div>
 
            <button type="button" name="button" class="btn btn-primary" ng-click="buildTemplate()">Generate</button>
+
+           <div class="row">
+             <h3>Helpful Tips</h3>
+             <p>
+               Use double braces to include a dice roll: [[2d6+2]]
+             </p>
+           </div>
+
+           <div class="row">
+             <h3>Helpful Links</h3>
+             <p>
+               <ul>
+                 <li><a href="https://wiki.roll20.net/DnD5e_Shaped_Character_Sheet">Roll20 Wiki - D&D 5e Character Sheet (Shaped)</a></li>
+                 <li><a href="https://app.roll20.net/forum/post/2101003/slug%7D">Roll20 Forum - 5E Template for Macros -- How to Manipulate It</a></li>
+                 <li><a href="https://www.reddit.com/r/Roll20/comments/2zx7a1/dd_5e_roll_template/">Reddit - D&D 5e Roll Templates</a></li>
+               </ul>
+             </p>
+           </div>
 
         </form>
 
